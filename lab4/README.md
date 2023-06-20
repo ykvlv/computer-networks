@@ -134,7 +134,7 @@ If-Modified-Since: Fri, 20 Jun 2023 11:10:08 GMT
 ### Этап 4. Анализ DNS-трафика
 
 ```bash
-ykvlv@macbook ~ % sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder # macbook
+ykvlv@macbook ~ % sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder # очистить кэш DNS на маке
 ```
 
 ![dns1](./img/dns1.png)
@@ -157,7 +157,7 @@ ykvlv@macbook ~ % sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder 
 ### Этап 5. Анализ ARP-трафика
 
 ```bash
-ykvlv@macbook ~ % sudo arp -a -d
+ykvlv@macbook ~ % sudo arp -a -d # стереть ARP таблицу на маке
 ```
 
 ![arp1](./img/arp1.png)
